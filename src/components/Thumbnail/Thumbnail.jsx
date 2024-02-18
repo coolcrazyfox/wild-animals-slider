@@ -5,6 +5,10 @@ const Thumbnail = () => {
     <div className={s.thumbnail}>
       <div className={s.item}>
         <img />
+        <div className={s.content}>
+          <div className={s.title}> 'item.name'</div>
+          <div className={s.des}> Description</div>
+        </div>
       </div>
     </div>
   );
