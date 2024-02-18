@@ -5,7 +5,7 @@ const AnimalItem = ({ item }) => {
   return (
     <div className={s.item}>
       <img src={item.images} />
-      <div className="content">
+      <div className={s.content}>
         <div className="author"> Andrei</div>
         <div className="title"> {item.name}</div>
         <div className="topic"> Animal</div>
