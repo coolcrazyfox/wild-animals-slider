@@ -4,6 +4,8 @@ import img2 from "../../../accent/img2.jpg";
 import img3 from "../../../accent/img3.jpg";
 import img4 from "../../../accent/img4.jpg";
 import AnimalItem from "./AnimalItem";
+import s from "../../../styles/Carousel.module.css";
+
 const Carousel = () => {
   const initState = [
     { id: 1, name: "elk", images: img1 },
@@ -12,7 +14,7 @@ const Carousel = () => {
     { id: 4, name: "wolf", images: img4 },
   ];
   return (
-    <div className="carousel">
+    <div className={s.carousel}>
       <div className="list">
         {initState.map((item) => {
           return (
