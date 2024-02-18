@@ -5,7 +5,7 @@ import img3 from "../../../accent/img3.jpg";
 import img4 from "../../../accent/img4.jpg";
 import AnimalItem from "./AnimalItem";
 import s from "../../../styles/Carousel.module.css";
-import style from "../../../styles/AnimalItem.module.css";
+
 import Thumbnail from "../../Thumbnail/Thumbnail";
 
 const Carousel = () => {

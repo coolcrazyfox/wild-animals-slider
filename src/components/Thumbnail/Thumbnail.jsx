@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../../styles/AnimalItem.module.css";
+import style from "../../../styles/Thumbnail.module.css";
 import img5 from "../../accent/";
 const Thumbnail = () => {
   return (

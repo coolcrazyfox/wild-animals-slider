@@ -1,5 +1,5 @@
 import React from "react";
-// import image from "../../../accent/img1.jpg";
+
 import s from "../../../styles/AnimalItem.module.css";
 const AnimalItem = ({ item }) => {
   return (
