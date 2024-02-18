@@ -7,6 +7,11 @@ function App() {
     <div className={s.App}>
       <Header />
       <Carousel />
+      <div className={s.thumbnail}>
+        <div className={s.item}>
+          <img />
+        </div>
+      </div>
     </div>
   );
 }
