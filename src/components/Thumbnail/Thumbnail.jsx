@@ -7,7 +7,7 @@ const Thumbnail = () => {
       <div className={style.item}>
         <img />
         <div className={style.content}>
-          <div className={style.title}> 'item.name'</div>
+          <div className={style.title}> Name slider</div>
           <div className={style.des}> Description</div>
         </div>
       </div>
