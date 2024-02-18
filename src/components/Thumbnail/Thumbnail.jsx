@@ -1,14 +1,14 @@
 import React from "react";
-import s from "../../../styles/AnimalItem.module.css";
+import style from "../../../styles/AnimalItem.module.css";
 import img5 from "../../accent/";
 const Thumbnail = () => {
   return (
-    <div className={s.thumbnail}>
-      <div className={s.item}>
-        <img src={img5} />
-        <div className={s.content}>
-          <div className={s.title}> 'item.name'</div>
-          <div className={s.des}> Description</div>
+    <div className={style.thumbnail}>
+      <div className={style.item}>
+        <img src="{img4}" />
+        <div className={style.content}>
+          <div className={style.title}> 'item.name'</div>
+          <div className={style.des}> Description</div>
         </div>
       </div>
     </div>
