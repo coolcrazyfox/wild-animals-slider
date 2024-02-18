@@ -6,16 +6,16 @@ const AnimalItem = ({ item }) => {
     <div className={s.item}>
       <img src={item.images} />
       <div className={s.content}>
-        <div className="author"> Andrei</div>
-        <div className="title"> {item.name}</div>
-        <div className="topic"> Animal</div>
-        <div className="des">
+        <div className={s.author}> Andrei</div>
+        <div className={s.title}> {item.name}</div>
+        <div className={s.topic}> Animal</div>
+        <div className={s.des}>
           Describes how inline contents of a block are horizontally aligned if
           the contents do not completely fill the line box.
         </div>
-        <div className="buttons">
-          <button className="btn">SEE MORE</button>
-          <button className="btn">SUBSCRIBE</button>
+        <div className={s.buttons}>
+          <button className={s.btn}>SEE MORE</button>
+          <button className={s.btn}>SUBSCRIBE</button>
         </div>
       </div>
     </div>
