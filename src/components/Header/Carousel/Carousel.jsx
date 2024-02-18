@@ -4,36 +4,52 @@ import img2 from "../../../accent/img2.jpg";
 import img3 from "../../../accent/img3.jpg";
 import img4 from "../../../accent/img4.jpg";
 import AnimalItem from "./AnimalItem";
-import s from "../../../styles/Carousel.module.css";
-
+import style from "../../../styles/Carousel.module.css";
 import Thumbnail from "../../Thumbnail/Thumbnail";
 
 const Carousel = () => {
   const initState = [
     { id: 1, name: "elk", images: img1 },
-    { id: 2, name: "leopard", images: img2 },
-    { id: 3, name: "elephant", images: img3 },
-    { id: 4, name: "wolf", images: img4 },
+    { id: 2, name: "wolf", images: img4 },
+    { id: 3, name: "elephant", images: img2 },
+    { id: 4, name: "leopard", images: img3 },
   ];
+
   return (
-    <div className={s.carousel}>
-      <div className={s.list}>
-        {initState.map((a) => {
+    <div className={style.carousel}>
+      <div className={style.list}>
+        {initState.map((a, i) => {
           return (
-            <div key={a.id}>
+            <div key={i}>
               <AnimalItem item={a} />
             </div>
           );
         })}
       </div>
-      {initState.map((c) => {
-        return (
-          <div key={c.id}>
-            {" "}
-            <Thumbnail card={c} />
+
+      <div className={style.thumbnail}>
+        <div className={style.item}>
+          <img className={style.img} src={img2} />
+          <div className={style.content}>
+            <div className={style.title}>1</div>
+            <div className={style.des}> Description</div>
           </div>
-        );
-      })}
+        </div>
+      </div>
+      <div className={style.thumbnail}>
+        <div className={style.item}>
+          <img className={style.img} src={img3} />
+          <div className={style.content}>
+            <div className={style.title}>2</div>
+            <div className={style.des}> Description</div>
+          </div>
+        </div>
+      </div>
+      {/* <div>
+        {initState.map((c, index) => {
+          return <Thumbnail card={c} key={index} />;
+        })}
+      </div> */}
     </div>
   );
 };
