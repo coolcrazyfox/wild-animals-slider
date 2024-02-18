@@ -10,9 +10,11 @@ import Thumbnail from "../../Thumbnail/Thumbnail";
 const Carousel = () => {
   const initState = [
     { id: 1, name: "elk", images: img1 },
-    { id: 2, name: "wolf", images: img4 },
-    { id: 3, name: "elephant", images: img2 },
-    { id: 4, name: "leopard", images: img3 },
+    { id: 2, name: "elephant", images: img2 },
+    { id: 3, name: "leopard", images: img3 },
+    { id: 4, name: "wolf", images: img4 },
+    { id: 5, name: "wolf", images: img5 },
+    { id: 6, name: "wolf", images: img6 },
   ];
 
   return (
@@ -27,7 +29,7 @@ const Carousel = () => {
         })}
       </div>
 
-      <div className={style.thumbnail}>
+      {/* <div className={style.thumbnail}>
         <div className={style.item}>
           <img className={style.img} src={img2} />
           <div className={style.content}>
@@ -42,13 +44,13 @@ const Carousel = () => {
             <div className={style.des}> Description</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* <div>
+      <div className={style.thumbnail}>
         {initState.map((c, index) => {
           return <Thumbnail card={c} key={index} />;
         })}
-      </div> */}
+      </div>
     </div>
   );
 };
