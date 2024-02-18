@@ -5,6 +5,7 @@ import img3 from "../../../accent/img3.jpg";
 import img4 from "../../../accent/img4.jpg";
 import AnimalItem from "./AnimalItem";
 import s from "../../../styles/Carousel.module.css";
+import Thumbnail from "../../Thumbnail/Thumbnail";
 
 const Carousel = () => {
   const initState = [
@@ -15,7 +16,7 @@ const Carousel = () => {
   ];
   return (
     <div className={s.carousel}>
-      <div className="list">
+      <div className={s.list}>
         {initState.map((item) => {
           return (
             <div key={item.id}>
@@ -24,6 +25,7 @@ const Carousel = () => {
           );
         })}
       </div>
+      <Thumbnail />
     </div>
   );
 };
