@@ -30,7 +30,7 @@ const Carousel = () => {
         return (
           <div key={card.id}>
             {" "}
-            <Thumbnail item={card} />
+            <Thumbnail card={card} />
           </div>
         );
       })}

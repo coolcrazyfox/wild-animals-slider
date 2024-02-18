@@ -32,3 +32,23 @@
 .item .content .topic {
   color: #f1683a;
 }
+.item .content .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+}
+.item .content .buttons .btn {
+  border: none;
+  color: #000;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+}
+.item .content .buttons .btn:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+  border: 1px solid #eee;
+}

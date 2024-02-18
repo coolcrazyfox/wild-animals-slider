@@ -1,0 +1,24 @@
+.thumbnail {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+}
+.item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item .content {
+  position: absolute;
+  bottom: 10px;
+}
