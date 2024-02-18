@@ -18,19 +18,19 @@ const Carousel = () => {
   return (
     <div className={s.carousel}>
       <div className={s.list}>
-        {initState.map((item) => {
+        {initState.map((a) => {
           return (
-            <div key={item.id}>
-              <AnimalItem item={item} />
+            <div key={a.id}>
+              <AnimalItem item={a} />
             </div>
           );
         })}
       </div>
-      {initState.map((card) => {
+      {initState.map((c) => {
         return (
-          <div key={card.id}>
+          <div key={c.id}>
             {" "}
-            <Thumbnail card={card} />
+            <Thumbnail card={c} />
           </div>
         );
       })}

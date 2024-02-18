@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../../styles/Thumbnail.module.css";
 
-const Thumbnail = (card) => {
+const Thumbnail = ({ card }) => {
   return (
     <div className={style.thumbnail}>
       <div className={style.item}>
