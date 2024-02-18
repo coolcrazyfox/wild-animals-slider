@@ -26,7 +26,14 @@ const Carousel = () => {
           );
         })}
       </div>
-      {/* <Thumbnail /> */}
+      {initState.map((card) => {
+        return (
+          <div key={card.id}>
+            {" "}
+            <Thumbnail item={card} />
+          </div>
+        );
+      })}
     </div>
   );
 };
