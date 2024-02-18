@@ -5,7 +5,6 @@ import img3 from "../../../accent/img3.jpg";
 import img4 from "../../../accent/img4.jpg";
 import AnimalItem from "./AnimalItem";
 import s from "../../../styles/Carousel.module.css";
-import Thumbnail from "../../Thumbnail/Thumbnail";
 
 const Carousel = () => {
   const initState = [
@@ -25,7 +24,15 @@ const Carousel = () => {
           );
         })}
       </div>
-      <Thumbnail />
+      <div className={s.thumbnail}>
+        <div className={s.item}>
+          <img src={img4} />
+          <div className={s.content}>
+            <div className={s.title}> 'item.name'</div>
+            <div className={s.des}> Description</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
