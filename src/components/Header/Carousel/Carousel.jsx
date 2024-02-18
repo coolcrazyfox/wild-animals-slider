@@ -3,6 +3,8 @@ import img1 from "../../../accent/img1.jpg";
 import img2 from "../../../accent/img2.jpg";
 import img3 from "../../../accent/img3.jpg";
 import img4 from "../../../accent/img4.jpg";
+import img5 from "../../../accent/img5.jpg";
+import img6 from "../../../accent/img6.jpg";
 import AnimalItem from "./AnimalItem";
 import style from "../../../styles/Carousel.module.css";
 import Thumbnail from "../../Thumbnail/Thumbnail";
@@ -13,38 +15,19 @@ const Carousel = () => {
     { id: 2, name: "elephant", images: img2 },
     { id: 3, name: "leopard", images: img3 },
     { id: 4, name: "wolf", images: img4 },
-    { id: 5, name: "wolf", images: img5 },
-    { id: 6, name: "wolf", images: img6 },
+    { id: 5, name: "deer", images: img5 },
+    { id: 6, name: "lion", images: img6 },
   ];
 
   return (
     <div className={style.carousel}>
-      <div className={style.list}>
-        {initState.map((a, i) => {
-          return (
-            <div key={i}>
-              <AnimalItem item={a} />
-            </div>
-          );
-        })}
-      </div>
-
-      {/* <div className={style.thumbnail}>
-        <div className={style.item}>
-          <img className={style.img} src={img2} />
-          <div className={style.content}>
-            <div className={style.title}>1</div>
-            <div className={style.des}> Description</div>
+      {initState.map((a, i) => {
+        return (
+          <div className={style.list} key={i}>
+            <AnimalItem item={a} />
           </div>
-        </div>
-        <div className={style.item}>
-          <img className={style.img} src={img3} />
-          <div className={style.content}>
-            <div className={style.title}>2</div>
-            <div className={style.des}> Description</div>
-          </div>
-        </div>
-      </div> */}
+        );
+      })}
 
       <div className={style.thumbnail}>
         {initState.map((c, index) => {
