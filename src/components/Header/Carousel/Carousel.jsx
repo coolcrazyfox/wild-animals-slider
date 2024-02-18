@@ -35,8 +35,6 @@ const Carousel = () => {
             <div className={style.des}> Description</div>
           </div>
         </div>
-      </div>
-      <div className={style.thumbnail}>
         <div className={style.item}>
           <img className={style.img} src={img3} />
           <div className={style.content}>
@@ -45,6 +43,7 @@ const Carousel = () => {
           </div>
         </div>
       </div>
+
       {/* <div>
         {initState.map((c, index) => {
           return <Thumbnail card={c} key={index} />;
