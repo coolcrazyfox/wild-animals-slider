@@ -1,8 +1,9 @@
 import React from "react";
 // import image from "../../../accent/img1.jpg";
+import s from "../../../styles/AnimalItem.module.css";
 const AnimalItem = ({ item }) => {
   return (
-    <div className="item">
+    <div className={s.item}>
       <img src={item.images} />
       <div className="content">
         <div className="author"> Andrei</div>
