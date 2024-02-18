@@ -19,3 +19,16 @@
   color: #fff;
   text-shadow: 0 5px 10px #0004;
 }
+.item .content .author {
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+.item .content .title,
+.item .content .topic {
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1.3em;
+}
+.item .content .topic {
+  color: #f1683a;
+}
