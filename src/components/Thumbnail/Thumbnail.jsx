@@ -1,11 +1,11 @@
 import React from "react";
-import style from "../../../styles/Thumbnail.module.css";
-import img5 from "../../accent/";
+import style from "../../styles/Thumbnail.module.css";
+
 const Thumbnail = () => {
   return (
     <div className={style.thumbnail}>
       <div className={style.item}>
-        <img src="{img4}" />
+        <img />
         <div className={style.content}>
           <div className={style.title}> 'item.name'</div>
           <div className={style.des}> Description</div>

@@ -26,7 +26,7 @@ const Carousel = () => {
           );
         })}
       </div>
-      <Thumbnail />
+      {/* <Thumbnail /> */}
     </div>
   );
 };
