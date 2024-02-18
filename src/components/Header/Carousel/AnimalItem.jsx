@@ -6,7 +6,7 @@ const AnimalItem = ({ item }) => {
       <img src={item.images} />
       <div className="content">
         <div className="author"> Andrei</div>
-        <div className="title"> Design Slider</div>
+        <div className="title"> {item.name}</div>
         <div className="topic"> Animal</div>
         <div className="des">
           Describes how inline contents of a block are horizontally aligned if
