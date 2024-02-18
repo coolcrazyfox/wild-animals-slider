@@ -1,6 +1,8 @@
-.App {
+* {
   margin: 0;
+  padding: 0;
   background: black;
   color: #eee;
   font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

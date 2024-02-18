@@ -1,0 +1,19 @@
+.header_container {
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: solid 1px red;
+}
+.li {
+  text-decoration: none;
+  /* margin-left: 1px;
+  margin-right: 2px; */
+  color: #eee;
+  border: solid 1px green;
+}
+.header_container .li {
+  margin-right: 40px;
+}
