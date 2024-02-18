@@ -1,9 +1,9 @@
 import React from "react";
-import image from "../../../accent/img1.jpg";
-const AnimalItem = () => {
+// import image from "../../../accent/img1.jpg";
+const AnimalItem = ({ item }) => {
   return (
     <div className="item">
-      <img src={image} />
+      <img src={item.images} />
       <div className="content">
         <div className="author"> Andrei</div>
         <div className="title"> Design Slider</div>
