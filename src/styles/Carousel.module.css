@@ -139,3 +139,8 @@
     opacity: 0;
   }
 }
+
+.carousel_next .arrows button,
+.carousel_prev .arrows button {
+  pointer-events: none;
+}
