@@ -27,7 +27,7 @@ const Carousel = () => {
   //   { id: 6, name: "lion", images: img6 },
   // ];
   const initState = [
-    { id: 1, name: "elk", images: img1 },
+    { id: 1, name: "KIA", images: img1 },
     { id: 2, name: "elephant", images: img2 },
     { id: 3, name: "leopard", images: img3 },
     { id: 4, name: "wolf", images: img4 },
