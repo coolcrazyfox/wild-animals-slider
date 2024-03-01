@@ -63,6 +63,7 @@ const Carousel = () => {
           <IoMdArrowDropright className={style.right} />
         </button>
       </div>
+      <div className={style.time}></div>
     </div>
   );
 };
