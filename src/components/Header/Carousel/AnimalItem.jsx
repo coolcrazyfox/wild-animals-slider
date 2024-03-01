@@ -7,9 +7,9 @@ const AnimalItem = ({ item }) => {
     <div className={s.item}>
       <img src={item.images} />
       <div className={s.content}>
-        <div className={s.author}> Andrei</div>
+        <div className={s.author}>By Andrei Malets</div>
         <div className={s.title}> {item.name}</div>
-        <div className={s.topic}> Animal</div>
+        <div className={s.topic}> EV9</div>
         <div className={s.des}>
           Describes how inline contents of a block are horizontally aligned if
           the contents do not completely fill the line box.
