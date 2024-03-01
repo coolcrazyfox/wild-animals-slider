@@ -52,13 +52,11 @@ const Carousel = () => {
       </div>
       <div className={style.arrows}>
         <button className={style.prev}>
-          xxx
-          {/* <IoMdArrowDropleft /> */}
+          <IoMdArrowDropleft />
         </button>
         <button className={style.next}>
           {" "}
-          xx
-          {/* <IoMdArrowDropright /> */}
+          <IoMdArrowDropright />
         </button>
       </div>
     </div>
