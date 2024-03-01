@@ -2,7 +2,6 @@ import React from "react";
 
 import s from "../../../styles/AnimalItem.module.css";
 const AnimalItem = ({ item }) => {
-  console.log("state", item.name);
   return (
     <div className={s.item}>
       <img src={item.images} />

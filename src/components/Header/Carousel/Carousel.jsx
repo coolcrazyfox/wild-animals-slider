@@ -13,7 +13,7 @@ import img11 from "../../../accent/img19.jpg";
 import img12 from "../../../accent/img20.jpg";
 import img13 from "../../../accent/img21.jpg";
 import img14 from "../../../accent/img22.jpg";
-import { IoMdArrowDropleft } from "react-icons/io";
+import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import AnimalItem from "./AnimalItem";
 import style from "../../../styles/Carousel.module.css";
 import Thumbnail from "../../Thumbnail/Thumbnail";
@@ -51,9 +51,14 @@ const Carousel = () => {
         })}
       </div>
       <div className={style.arrows}>
-        <button>
+        <button className={style.prev}>
+          xxx
+          {/* <IoMdArrowDropleft /> */}
+        </button>
+        <button className={style.next}>
           {" "}
-          <IoMdArrowDropleft />
+          xx
+          {/* <IoMdArrowDropright /> */}
         </button>
       </div>
     </div>
