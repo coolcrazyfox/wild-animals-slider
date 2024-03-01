@@ -32,6 +32,10 @@
 .item .content .topic {
   color: #40f30a;
 }
+.item .content .des {
+  color: #fde212;
+  font-size: 24px;
+}
 .item .content .buttons {
   display: grid;
   grid-template-columns: repeat(2, 130px);
