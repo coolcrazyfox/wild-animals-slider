@@ -7,8 +7,12 @@ const Thumbnail = ({ card }) => {
       <div className={style.item}>
         <img className={style.img} src={card.images} />
         <div className={style.content}>
-          <div className={style.title}> {card.name}</div>
-          <div className={style.des}> Description</div>
+          <div className={style.title}>
+            {" "}
+            {card.name}
+            {card.id}
+          </div>
+          <div className={style.des}> Description {card.id}</div>
         </div>
       </div>
     </>

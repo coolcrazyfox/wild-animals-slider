@@ -13,6 +13,7 @@ import img11 from "../../../accent/img19.jpg";
 import img12 from "../../../accent/img20.jpg";
 import img13 from "../../../accent/img21.jpg";
 import img14 from "../../../accent/img22.jpg";
+import { IoMdArrowDropleft } from "react-icons/io";
 import AnimalItem from "./AnimalItem";
 import style from "../../../styles/Carousel.module.css";
 import Thumbnail from "../../Thumbnail/Thumbnail";
@@ -48,6 +49,12 @@ const Carousel = () => {
         {initState.map((c, index) => {
           return <Thumbnail card={c} key={index} />;
         })}
+      </div>
+      <div className={style.arrows}>
+        <button>
+          {" "}
+          <IoMdArrowDropleft />
+        </button>
       </div>
     </div>
   );
