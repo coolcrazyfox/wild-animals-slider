@@ -36,7 +36,11 @@ const Carousel = () => {
     { id: 6, name: "NEW KIA", images: img3 },
   ];
   return (
-    <div className={style.carousel}>
+    <div
+      className={style.carousel}
+      //  className={style.carousel_next}
+      //  className={style.carousel_prev}
+    >
       {initState.map((a, i) => {
         return (
           <div className={style.list} key={i}>
