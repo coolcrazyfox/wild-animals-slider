@@ -76,3 +76,15 @@
     transform: translateY(0);
   }
 }
+.item:nth-child(1) .title {
+  animation-delay: 1.2s;
+}
+.item:nth-child(1) .topic {
+  animation-delay: 1.4s;
+}
+.item:nth-child(1) .des {
+  animation-delay: 1.6s;
+}
+.item:nth-child(1) .buttons {
+  animation-delay: 1.8s;
+}
