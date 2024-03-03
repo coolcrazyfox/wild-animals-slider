@@ -48,11 +48,11 @@ const Carousel = () => {
   const handleOnClickCard = (newId) => {
     setNewId(newId);
   };
-  const nextId = 0;
+  const nextId = 6;
 
-  const onChangeMainCar = () => {
+  const onChangeMainCar = (newId) => {
     setNewId(newId);
-    setColArray([...colArray, { id: newId, name: "ye", image: img1 }]);
+    setColArray([...colArray, { id: newId++, name: "ye", image: img1 }]);
   };
   return (
     <div
@@ -78,10 +78,9 @@ const Carousel = () => {
             <Thumbnail
               card={c}
               key={c.id}
-              onClickCard={handleOnClickCard}
+              onClickCard={onChangeMainCar}
               newId={newId}
               setNewId={setNewId}
-              onChangeMainCar={onChangeMainCar}
             />
           );
         })}

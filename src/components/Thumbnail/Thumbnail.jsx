@@ -6,7 +6,6 @@ const Thumbnail = ({ card, onClickCard, newId, onChangeMainCar }) => {
   const handleCardChange = () => {
     setImgIndex(card.id);
     onClickCard(card.id);
-    onChangeMainCar(card.id);
   };
   return (
     <>
