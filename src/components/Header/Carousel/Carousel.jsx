@@ -29,12 +29,12 @@ const Carousel = () => {
   //   { id: 6, name: "lion", images: img6 },
   // ];
   const initState = [
-    { id: 1, name: " NEW KIA", images: img6 },
+    { id: 1, name: "NEW KIA", images: img6 },
     { id: 2, name: "NEW KIA", images: img5 },
     { id: 3, name: "NEW KIA", images: img4 },
-    { id: 4, name: "NEW KIA", images: img2 },
-    { id: 5, name: "NEW KIA", images: img1 },
-    { id: 6, name: "NEW KIA", images: img3 },
+    { id: 4, name: "NEW KIA", images: img3 },
+    { id: 5, name: "NEW KIA", images: img2 },
+    { id: 6, name: "NEW KIA", images: img1 },
   ];
   const nextDom = "next";
   const prevDom = "prev";
