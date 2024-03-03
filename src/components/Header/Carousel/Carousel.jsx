@@ -52,11 +52,7 @@ const Carousel = () => {
       //  className={style.carousel_prev}
     >
       {initState.map((a, i) => {
-        return (
-          <div className={style.list} key={i}>
-            <CarsItem item={a} />
-          </div>
-        );
+        return <CarsItem key={i} item={a} className={style.list} />;
       })}
 
       <div className={style.thumbnail}>
