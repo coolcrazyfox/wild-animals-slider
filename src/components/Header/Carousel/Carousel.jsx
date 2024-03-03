@@ -37,10 +37,15 @@ const Carousel = () => {
     { id: 6, name: "NEW KIA", images: img1 },
   ];
   const nextDom = "next";
+
   const prevDom = "prev";
   const carouselDom = ".carousel";
   const listDom = ".carousel .list";
   const thumbnailDom = ".carousel .thumbnail";
+  const [showNext, setShowNext] = React.useState(true);
+  const [showPrev, setShowPrev] = React.useState(prevDom);
+  // const onClickChangeBtn=()=>{()=>setShowNext(showNext)}
+
   return (
     <div
       className={style.carousel}
@@ -61,10 +66,16 @@ const Carousel = () => {
         })}
       </div>
       <div className={style.arrows}>
-        <button className={style.prev}>
+        <button
+          className={showPrev ? style.prev : style.prev_ch}
+          onClick={() => setShowPrev(!showPrev)}
+        >
           <IoMdArrowDropleft className={style.left} />
         </button>
-        <button className={style.next}>
+        <button
+          className={showNext ? style.next : style.next_ch}
+          onClick={() => setShowNext(!showNext)}
+        >
           {" "}
           <IoMdArrowDropright className={style.right} />
         </button>
