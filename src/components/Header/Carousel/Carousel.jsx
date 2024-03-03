@@ -44,7 +44,10 @@ const Carousel = () => {
   const [colArray, setColArray] = React.useState(initState);
   const [showNext, setShowNext] = React.useState(nextDom);
   const [showPrev, setShowPrev] = React.useState(prevDom);
-
+  const [newId, setNewId] = React.useState(0);
+  const onClickCard = () => {
+    setNewId(++newId);
+  };
   return (
     <div
       className={style.carousel}
@@ -52,12 +55,27 @@ const Carousel = () => {
       //  className={style.carousel_prev}
     >
       {initState.map((a, i) => {
-        return <CarsItem key={i} item={a} className={style.list} />;
+        return (
+          <CarsItem
+            key={i}
+            item={a}
+            className={style.list}
+            onClickCard={onClickCard}
+          />
+        );
       })}
 
       <div className={style.thumbnail}>
         {initState.map((c, index) => {
-          return <Thumbnail card={c} key={index} />;
+          return (
+            <Thumbnail
+              card={c}
+              key={c.id}
+              onClickCard={onClickCard}
+              newId={newId}
+              setNewId={setNewId}
+            />
+          );
         })}
       </div>
       <div className={style.arrows}>
@@ -71,7 +89,6 @@ const Carousel = () => {
           className={showNext ? style.next : style.next_ch}
           onClick={() => setShowNext(!showNext)}
         >
-          {" "}
           <IoMdArrowDropright className={style.right} />
         </button>
       </div>

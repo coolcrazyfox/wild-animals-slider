@@ -1,12 +1,12 @@
 import React from "react";
 import style from "../../styles/Thumbnail.module.css";
 
-const Thumbnail = ({ card }) => {
-  const [imgIndex, setImgIndex] = React.useState(0);
+const Thumbnail = ({ card, onClickCard, newId, setNewId }) => {
+  const [imgIndex, setImgIndex] = React.useState(newId);
 
   return (
     <>
-      <div className={style.item} onClick={() => setImgIndex(imgIndex + 1)}>
+      <div className={style.item} onClick={() => setImgIndex(card.id)}>
         <img className={style.img} src={card.images} />
         <div className={style.content}>
           <div className={style.title}>
