@@ -44,9 +44,15 @@ const Carousel = () => {
   const [colArray, setColArray] = React.useState(initState);
   const [showNext, setShowNext] = React.useState(nextDom);
   const [showPrev, setShowPrev] = React.useState(prevDom);
-  const [newId, setNewId] = React.useState(0);
-  const onClickCard = () => {
-    setNewId(++newId);
+  const [newId, setNewId] = React.useState("");
+  const handleOnClickCard = (newId) => {
+    setNewId(newId);
+  };
+  const nextId = 0;
+
+  const onChangeMainCar = () => {
+    setNewId(newId);
+    setColArray([...colArray, { id: nextId++, name: "ye", image: img1 }]);
   };
   return (
     <div
@@ -54,13 +60,14 @@ const Carousel = () => {
       //  className={style.carousel_next}
       //  className={style.carousel_prev}
     >
-      {initState.map((a, i) => {
+      {colArray.map((a, i) => {
         return (
           <CarsItem
             key={i}
             item={a}
             className={style.list}
-            onClickCard={onClickCard}
+            newId={newId}
+            onClickCard={onChangeMainCar}
           />
         );
       })}
@@ -71,9 +78,10 @@ const Carousel = () => {
             <Thumbnail
               card={c}
               key={c.id}
-              onClickCard={onClickCard}
+              onClickCard={handleOnClickCard}
               newId={newId}
               setNewId={setNewId}
+              onChangeMainCar={onChangeMainCar}
             />
           );
         })}
