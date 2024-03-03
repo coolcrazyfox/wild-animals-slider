@@ -37,11 +37,11 @@ const Carousel = () => {
     { id: 6, name: "NEW KIA", images: img1 },
   ];
   const nextDom = "next";
-
   const prevDom = "prev";
   const carouselDom = ".carousel";
   const listDom = ".carousel .list";
   const thumbnailDom = ".carousel .thumbnail";
+  const [colArray, setColArray] = React.useState(initState);
   const [showNext, setShowNext] = React.useState(nextDom);
   const [showPrev, setShowPrev] = React.useState(prevDom);
 
