@@ -13,6 +13,7 @@ import img11 from "../../../accent/img19.jpg";
 import img12 from "../../../accent/img20.jpg";
 import img13 from "../../../accent/img21.jpg";
 import img14 from "../../../accent/img22.jpg";
+import img15 from "../../../accent/img8.jpg";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import AnimalItem from "./AnimalItem";
 import style from "../../../styles/Carousel.module.css";
@@ -35,6 +36,11 @@ const Carousel = () => {
     { id: 5, name: "NEW KIA", images: img1 },
     { id: 6, name: "NEW KIA", images: img3 },
   ];
+  const nextDom = "next";
+  const prevDom = "prev";
+  const carouselDom = ".carousel";
+  const listDom = ".carousel .list";
+  const thumbnailDom = ".carousel .thumbnail";
   return (
     <div
       className={style.carousel}
