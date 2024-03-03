@@ -1,7 +1,7 @@
 import React from "react";
 
 import s from "../../../styles/AnimalItem.module.css";
-const AnimalItem = ({ item }) => {
+const CarsItem = ({ item }) => {
   return (
     <div className={s.item}>
       <img src={item.images} />
@@ -19,4 +19,4 @@ const AnimalItem = ({ item }) => {
   );
 };
 
-export default AnimalItem;
+export default CarsItem;

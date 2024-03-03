@@ -15,7 +15,7 @@ import img13 from "../../../accent/img21.jpg";
 import img14 from "../../../accent/img22.jpg";
 import img15 from "../../../accent/img8.jpg";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
-import AnimalItem from "./AnimalItem";
+import CarsItem from "./CarsItem";
 import style from "../../../styles/Carousel.module.css";
 import Thumbnail from "../../Thumbnail/Thumbnail";
 
@@ -42,9 +42,8 @@ const Carousel = () => {
   const carouselDom = ".carousel";
   const listDom = ".carousel .list";
   const thumbnailDom = ".carousel .thumbnail";
-  const [showNext, setShowNext] = React.useState(true);
+  const [showNext, setShowNext] = React.useState(nextDom);
   const [showPrev, setShowPrev] = React.useState(prevDom);
-  // const onClickChangeBtn=()=>{()=>setShowNext(showNext)}
 
   return (
     <div
@@ -55,7 +54,7 @@ const Carousel = () => {
       {initState.map((a, i) => {
         return (
           <div className={style.list} key={i}>
-            <AnimalItem item={a} />
+            <CarsItem item={a} />
           </div>
         );
       })}
