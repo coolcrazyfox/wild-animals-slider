@@ -54,14 +54,14 @@
 .list .item .content .buttons .btn {
   border: none;
   color: #000;
-  background-color: #eee;
+  background-color: #eeeeeee8;
   letter-spacing: 3px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 500;
 }
 .list .item .content .buttons .btn:nth-child(2) {
-  background-color: transparent;
-  color: #eee;
+  background-color: #40f30ab9;
+  color: #000;
   border: 1px solid #eee;
 }
 .list .item:nth-child(1) {
