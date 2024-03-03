@@ -52,7 +52,7 @@ const Carousel = () => {
 
   const onChangeMainCar = () => {
     setNewId(newId);
-    setColArray([...colArray, { id: nextId++, name: "ye", image: img1 }]);
+    setColArray([...colArray, { id: newId, name: "ye", image: img1 }]);
   };
   return (
     <div
