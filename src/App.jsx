@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "./components/Header/Carousel/Carousel";
 import Header from "./components/Header/Header";
 import Details from "./components/Test/Details";
@@ -11,6 +11,7 @@ function App() {
     description: "History, guys",
     btnText: "Click",
   });
+  useEffect(() => setDetails((p) => ({ ...p, isLoading: false })), []);
   return (
     <div className={s.App}>
       {details.isLoading ? (
