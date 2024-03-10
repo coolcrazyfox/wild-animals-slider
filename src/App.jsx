@@ -13,7 +13,11 @@ function App() {
   });
   return (
     <div className={s.App}>
-      <Details details={details} setDetails={setDetails} />
+      {details.isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <Details details={details} setDetails={setDetails} />
+      )}
     </div>
     //  <div className={s.App}>
     // <Header />
