@@ -6,6 +6,7 @@ import s from "./styles/App.module.css";
 
 function App() {
   const [details, setDetails] = useState({
+    isLoading: true,
     title: "text",
     description: "History, guys",
     btnText: "Click",
