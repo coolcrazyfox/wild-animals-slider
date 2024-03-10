@@ -4,7 +4,9 @@ import s from "./styles/App.module.css";
 
 function App() {
   return (
-    <div className={s.App}>Hifgdg</div>
+    <div className={s.App}>
+      <Details />
+    </div>
     //  <div className={s.App}>
     // <Header />
     // <Carousel />
